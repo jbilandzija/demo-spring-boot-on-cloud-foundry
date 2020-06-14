@@ -1,0 +1,5 @@
+.idea/**
+demo-service-discovery/.idea/**
+demo-service-discovery/target/**
+
+demo-service-alpha/.idea/workspace.xml

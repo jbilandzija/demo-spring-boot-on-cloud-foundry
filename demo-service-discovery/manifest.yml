@@ -1,0 +1,6 @@
+---
+applications:
+  - name: eureka
+    memory: 768M
+    host: demo-eureka-service
+    path: target/spring-boot-microservices-service-discovery-0.0.1-SNAPSHOT.jar
