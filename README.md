@@ -1,8 +1,8 @@
 # spring-boot-microservice-demo
-Demo project to Spring Boot microservice architecture in the cloud
+Demo project to Spring Boot microservice architecture on Cloud Foundry
 
 ### Note
-External Configs can be found here: https://github.com/jbilandzija/spring-boot-microservice-demo-configs
+Original project setup was reduced to simplify demonstration: https://github.com/jbilandzija/demo-spring-rest-cloud-services
 
 ### Demo structure
-![Spring-Cloud-Services-REST-Demo-Schema.png](Spring-Cloud-Services-REST-Demo-Schema.png)
+![spring-pcf.png](spring-pcf.png)

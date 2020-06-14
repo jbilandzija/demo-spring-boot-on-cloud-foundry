@@ -1,4 +1,4 @@
-# Spring Boot on Cloud Foundry - Service Discovery
+# Spring Boot on Cloud Foundry - Microservice Alpha
 
 ### Note
 Original Readme can be found here: https://github.com/jbilandzija/demo-spring-rest-cloud-services

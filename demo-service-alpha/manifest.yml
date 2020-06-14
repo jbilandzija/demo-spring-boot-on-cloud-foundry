@@ -1,0 +1,11 @@
+---
+applications:
+  - name: alpha
+    memory: 768M
+    host: demo-alpha-service
+    path: target/spring-boot-microservices-service-0.0.1-SNAPSHOT.jar
+    env:
+      spring.profiles.active: cloud
+    services:
+      - eureka
+      - postgresql

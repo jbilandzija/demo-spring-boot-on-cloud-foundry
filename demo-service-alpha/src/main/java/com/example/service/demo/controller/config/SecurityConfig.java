@@ -1,4 +1,4 @@
-package com.example.servicediscovery.config;
+package com.example.service.demo.controller.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -26,7 +26,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.csrf().disable()
                 .httpBasic()
                 .and().authorizeRequests()
-                .anyRequest().authenticated();
+                .anyRequest().authenticated()
+                .and()
+                .httpBasic();
     }
 
     @Bean

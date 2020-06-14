@@ -1,0 +1,211 @@
+{
+	"info": {
+		"_postman_id": "a7dfb142-f85e-4968-9162-498619185849",
+		"name": "Demo Spring Boot Cloud Foundry",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all users",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cfpush20",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cfpush20",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://demo-service-alpha.cfapps.io/v1/users",
+					"protocol": "https",
+					"host": [
+						"demo-service-alpha",
+						"cfapps",
+						"io"
+					],
+					"path": [
+						"v1",
+						"users"
+					]
+				},
+				"description": "Get all users"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Message",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cfpush20",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cfpush20",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://demo-service-alpha.cfapps.io/v1/message",
+					"protocol": "https",
+					"host": [
+						"demo-service-alpha",
+						"cfapps",
+						"io"
+					],
+					"path": [
+						"v1",
+						"message"
+					]
+				},
+				"description": "Get all users"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all users from service beta",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://demo-service-alpha.cfapps.io/v1/usersBeta",
+					"protocol": "https",
+					"host": [
+						"demo-service-alpha",
+						"cfapps",
+						"io"
+					],
+					"path": [
+						"v1",
+						"usersBeta"
+					]
+				},
+				"description": "Get all users"
+			},
+			"response": []
+		},
+		{
+			"name": "Get user by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://demo-service-alpha.cfapps.io/v1/user/1",
+					"protocol": "https",
+					"host": [
+						"demo-service-alpha",
+						"cfapps",
+						"io"
+					],
+					"path": [
+						"v1",
+						"user",
+						"1"
+					]
+				},
+				"description": "Get a user by id"
+			},
+			"response": []
+		},
+		{
+			"name": "Create a new user",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "cfpush20",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "cfpush20",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\": \"Keven\",\n\t\"lastName\": \"Loise\",\n\t\"userName\": \"KL\",\n\t\"password\": \"secret\",\n\t\"salary\": \"60000\",\n\t\"age\": \"26\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://demo-service-alpha.cfapps.io/v1/signup",
+					"protocol": "https",
+					"host": [
+						"demo-service-alpha",
+						"cfapps",
+						"io"
+					],
+					"path": [
+						"v1",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "cfpush20",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "cfpush20",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "6fa42caa-e1c9-4fb4-8459-4fb62bf7a724",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "162e26fc-b001-4ed7-a95b-9e5e601e6679",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
